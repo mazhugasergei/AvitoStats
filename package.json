@@ -6,11 +6,12 @@
   "license": "proprietary",
   "private": true,
   "type": "module",
-
   "dependencies": {
-    "horizen-framework": "file:./.horizen-framework"
+    "clickhouse": "^2.6.0",
+    "horizen-framework": "file:./.horizen-framework",
+    "msw": "^2.1.4",
+    "node-cron": "^3.0.3"
   },
-  
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^7.1.0"
