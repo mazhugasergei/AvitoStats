@@ -1,6 +1,5 @@
 import Horizen from "horizen-framework/backend"
 import config from "../../config.json" assert { type: "json" }
-import cron from "node-cron"
 
 const horizen = new Horizen(config.horizen)
 
@@ -12,7 +11,7 @@ export default horizen.init(async function (props, options) {
 	const exportManager = new localServices.ExportManager({ ...props })
 	const statsManager = new localServices.StatsManager({ ...props })
 	const tasksManager = new localServices.TasksManager({ statsManager, ...props })
-	const cronManager = new localServices.CronManager({ tasksManager, ...props })
+	const cronManager = new localServices.CronManager({ tasksManager, exportManager, ...props })
 
 	const accountsKeys = Object.keys(config.accounts)
 

@@ -1,6 +1,6 @@
 import * as Cron from "node-cron"
 
-export default function Manager({ tasksManager, db }) {
+export default function Manager({ tasksManager, exportManager, db }) {
 	const jobs = {}
 
 	this.jobs = jobs

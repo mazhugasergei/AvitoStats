@@ -15,18 +15,18 @@
 	},
 	"accounts": {
 		"account1": {
-			"apiKey": "***",
-			"apiSecret": "***"
+			"apiKey": "EOVscj2cFm6ITrDKG9JP",
+			"apiSecret": "Oi52bqIhfZUPAA_aXgc3yZlxTwXvzHTXCUfXZmR0"
 		}
 	},
 	"clickhouse": {
-		"url": "http://***",
-		"port": "***",
+		"url": "http://194.114.129.21",
+		"port": 8123,
 		"debug": false,
 		"format": "json",
 		"basicAuth": {
-			"username": "***",
-			"password": "***"
+			"username": "default",
+			"password": "password"
 		}
 	}
 }
